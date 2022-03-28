@@ -1,1 +1,3 @@
-# api-elgeladon
+# API - El Geladon
+
+> Aplicação para BleuEdtech
