@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 
 const connectToDatabase = () => {
   mongoose
-    .connect('mongodb+srv://root:admin@api-elgeladon.uqxlf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+    .connect(process.env.URI_DATABASE, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
-    .then(() => console.log('MongoDB Conectado!'))
+    .then(() => console.log('MongoDB Atlas Conectado!'))
     .catch((error) =>
       console.log(`Erro ao conectar com o MongoDB, erro: ${error}`),
     );
