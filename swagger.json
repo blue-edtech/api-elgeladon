@@ -11,12 +11,12 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000/paletas",
-      "description": "API de teste"
-    },
-    {
       "url": "https://api-elgeladon.herokuapp.com/paletas",
       "description": "API de produção"
+    },
+    {
+      "url": "http://localhost:3000/paletas",
+      "description": "API de teste"
     }
   ],
   "paths": {
@@ -265,20 +265,20 @@
       }
     },
     "/finish-carrinho": {
-        "delete": {
-          "summary": "Apagar todos os itens do carrinho",
-          "description": "Rota responsável por apagar todos os itens do carrinho",
-          "tags": ["Carrinho"],
-          "responses": {
-            "400": {
-              "description": "Bad Request"
-            },
-            "200": {
-              "description": "OK"
-            }
+      "delete": {
+        "summary": "Apagar todos os itens do carrinho",
+        "description": "Rota responsável por apagar todos os itens do carrinho",
+        "tags": ["Carrinho"],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "200": {
+            "description": "OK"
           }
         }
       }
+    }
   },
   "components": {
     "schemas": {
