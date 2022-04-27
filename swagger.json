@@ -11,8 +11,12 @@
   },
   "servers": [
     {
+      "url": "https://apielgeladon-blue.onrender.com/paletas",
+      "description": "API de produção Render"
+    },
+    {
       "url": "https://api-elgeladon.herokuapp.com/paletas",
-      "description": "API de produção"
+      "description": "API de produção Heroku"
     },
     {
       "url": "http://localhost:3000/paletas",
